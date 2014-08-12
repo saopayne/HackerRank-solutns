@@ -89,7 +89,6 @@ public class AlmostSortedInterval {
                 while (++i < N && A[i] < A[i-1]){
                     ++count;
                 }
-                
                 //Get the valley's bottom
                 val = A[--i];
                 
@@ -100,13 +99,7 @@ public class AlmostSortedInterval {
             //Add start point to list
             startIs[numStarts] = i;
             startVs[numStarts++] = val;
-            /*
-            System.out.println("i: " + i + ", val: " + val);
-            System.out.println("Tops(" + numTops + "): " + Arrays.toString(topIs) + ", " + Arrays.toString(topVs));
-            System.out.println("Starts(" + numStarts + "): " + Arrays.toString(startIs) + ", " + Arrays.toString(startVs));
-            System.out.println("Count: " + count + ", minStart: " + minStart);
-            System.out.println("");
-            */
+          
         }
         
         return count;
