@@ -16,6 +16,7 @@ import java.util.Scanner;
 public class Flowers {
     
     public static void main(String[] args) throws Exception {
+//        System.out.println(findNumberOFBits(16, 12));
         Flowers main = new Flowers();
         main.run();
         System.exit(0);
@@ -49,4 +50,17 @@ public class Flowers {
         }
         System.out.println(total);
        }
+    
+    //count the number of shifts frm a number to another and vice versa
+//    public static int findNumberOFBits(int first,int second){
+//         int bitvount = 0;
+//         int z= 0;
+//         z = first ^ second;
+//        
+//        while (z != 0){
+//            bitvount += z & 1;
+//            z = z >> 1;
+//        }
+//        return bitvount;
+//    }
 }
